@@ -5,6 +5,7 @@ const app = express();
 const port = 8080
 
 app.get('/', (req, res) => {
+  console.log(`Request received at ${new Date()}`)
   res.send('Hello World!');
 });
 
